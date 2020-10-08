@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp">
+
+         <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fav_item_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/res_icon"
+                tools:ignore="ContentDescription"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/fav_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Item Name"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/fav_item_image"/>
+
+            <TextView
+                android:id="@+id/fav_kitchen_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurent"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/fav_item_image"
+                android:layout_below="@+id/fav_item_name"
+                />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:background="#D3D3D3"
+        android:layout_below="@+id/fav_kitchen_name"/>
+
+</RelativeLayout>

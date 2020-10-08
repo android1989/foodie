@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Foodie</string>
+    <string name="facebook_app_id">727204561349486</string>
+    <string name="fb_login_protocol_scheme">fb727204561349486</string>
+    <string name="auto_detect_location_hint">Auto Detect Location</string>
+    <string name="auto_send_data_btn">Send Data</string>
+    <string name="main_text">This Is Main Activity</string>
+    <string name="register_name_hint">Name</string>
+    <string name="register_username_hint">UserName</string>
+    <string name="register_password_hint">Password</string>
+    <string name="register_button">Register</string>
+    <string name="enter_location_hint">Enter Location</string>
+    <string name="search_location_button_text">Search</string>
+    <string name="start_username_text">UserName</string>
+    <string name="start_password_text">Password</string>
+    <string name="start_login_button">Let\'s Go</string>
+    <string name="start_signup_text">SignUp</string>
+    <string name="single_restaurent_name">Display Name</string>
+    <string name="single_restaurent_location">Location</string>
+    <string name="single_restaurent_rating_text">Rating</string>
+    <string name="drawer_menu_setting">Setting</string>
+    <string name="drawer_menu_add_restaurent">Add Restaurent</string>
+    <string name="drawer_menu_favourite">Favourite</string>
+    <string name="drawer_menu_logout">LogOut</string>
+    <string name="menu_logout">LogOut</string>
+    <string name="add_restaurent_image_texts">Add Restaurent Image</string>
+    <string name="add_restaurent_name_texts">Add Restaurent Name</string>
+    <string name="enter_restaurent_name_hint">Enter Restaurent Name..</string>
+    <string name="add_restaurent_location_text">Add Restaurent Location</string>
+    <string name="add_restaurent_rating_text">Add Restaurent Rating</string>
+    <string name="add_restaurent_button">Add Restaurent</string>
+    <string name="add_restaurent_image_button">Add Image</string>
+    <string name="drawer_menu_dashboard">DashBoard</string>
+    <string name="drawer_menu_add_items">Add Restaurent Dishes</string>
+    <string name="drawer_add_favourites">Favourites</string>
+
+    <string-array name="status">
+        <item>Open</item>
+        <item>Closed</item>
+    </string-array>
+
+    <string-array name="order_type">
+        <item>Payment Options</item>
+        <item>Cash On Delievery</item>
+        <item>Debit Card</item>
+        <item>Credit Card</item>
+        <item>Net Banking</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

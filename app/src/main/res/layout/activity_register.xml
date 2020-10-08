@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background3"
+    tools:context="com.example.user.foodie.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/heading_logo"
+        android:src="@drawable/signup_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@+id/heading"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/heading" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:text="Signup Screen"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading_logo"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/curve_button"
+            android:hint="Name.."
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/curve_button"
+            android:textColorHint="#FFFFFF"
+            android:hint="Email.."
+            android:textColor="#FFFFFF"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:textColorHint="#FFFFFF"
+            android:hint="Password.."
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/curve_button"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:hint="Mobile.."
+            android:textColorHint="#FFFFFF"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/curve_button"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:background="@drawable/curve_button"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

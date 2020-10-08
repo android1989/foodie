@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:src="@drawable/foodie_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/start_textInput_username"
+        android:layout_marginBottom="40dp"/>
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/start_textInput_username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/curve_button_white">
+
+    <EditText
+        android:id="@+id/start_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/start_username_text"
+        android:singleLine="true"
+        android:gravity="center"/>
+
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/start_textInput_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/start_textInput_username"
+        android:background="@drawable/curve_button_white">
+
+        <EditText
+            android:id="@+id/start_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/start_password_text"
+            android:singleLine="true"
+            android:gravity="center"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/start_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_login_button"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/curve_button_white"
+        android:layout_below="@+id/start_textInput_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/start_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_signup_text"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/curve_button_white"
+        android:layout_below="@+id/start_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="30dp"/>
+
+
+
+</RelativeLayout>

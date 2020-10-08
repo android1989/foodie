@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/single_restaurent_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/restaurent_image"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/res_icon"
+        tools:ignore="ContentDescription"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" />
+
+     <ImageView
+         android:id="@+id/single_restaurent_name_icon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/name_icon_small"
+         android:layout_toRightOf="@+id/restaurent_image"
+         android:layout_toEndOf="@+id/restaurent_image"
+         android:layout_marginTop="15dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginLeft="10dp"
+         tools:ignore="ContentDescription"/>
+    <TextView
+        android:id="@+id/restaurent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/single_restaurent_name_icon"
+        android:layout_toEndOf="@+id/single_restaurent_name_icon"
+        android:text="@string/single_restaurent_name"
+        android:textSize="22sp"
+        android:textColor="#555555"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/restaurent_location_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/location_icon_red"
+        android:layout_below="@+id/restaurent_name"
+        android:layout_toRightOf="@+id/restaurent_image"
+        android:layout_toEndOf="@+id/restaurent_image"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/restaurent_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurent_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/restaurent_location_icon"
+        android:layout_toEndOf="@+id/restaurent_location_icon"
+        android:text="@string/single_restaurent_location"
+        android:textColor="#555555"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/restaurent_rating_icon"
+        android:src="@drawable/rate_icon_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurent_location"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/restaurent_image"
+        android:layout_toEndOf="@+id/restaurent_image"
+        tools:ignore="contentDescription"/>
+
+    <TextView
+        android:id="@+id/rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurent_location"
+        android:layout_toRightOf="@+id/restaurent_rating_icon"
+        android:layout_toEndOf="@+id/restaurent_rating_icon"
+        android:text="@string/single_restaurent_rating_text"
+        android:textColor="#555555"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:text=""
+        android:layout_below="@+id/rating_text"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#D3D3D3"/>
+
+
+</RelativeLayout>

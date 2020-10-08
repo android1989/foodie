@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_restaurent_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8243"
+    tools:context=".Add_Restaurent_Activity">
+
+    <LinearLayout
+        android:id="@+id/add_restaurent_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include android:id="@+id/add_restaurent_toolbar"
+            layout="@layout/appbar_layout"/>
+
+    <LinearLayout
+        android:id="@+id/add_restaurent_image_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/add_restaurent_image_text"
+        android:text="@string/add_restaurent_image_texts"
+        android:layout_width="0dp"
+        android:layout_weight="0.90"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_restaurent_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/profile_avatar"
+        tools:ignore="ContentDescription"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+        <Button
+            android:id="@+id/add_restaurent_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve_button_white"
+            android:text="@string/add_restaurent_image_button"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D3D3D3"/>
+
+        <LinearLayout
+            android:id="@+id/add_restaurent_name_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:id="@+id/add_restaurent_name_text"
+                android:text="@string/add_restaurent_name_texts"
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:layout_margin="10dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+            <EditText
+                android:id="@+id/add_restaurent_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:hint="@string/enter_restaurent_name_hint"
+                android:background="@drawable/curve_button_white"
+                android:inputType="text"
+                android:padding="15dp"
+                android:cursorVisible="false"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="30dp"
+            android:background="#D3D3D3"/>
+
+        <LinearLayout
+            android:id="@+id/add_restaurent_location_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/add_restaurent_location_text"
+                android:text="@string/add_restaurent_location_text"
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:layout_margin="10dp"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/add_restaurent_location_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:hint="Enter Restaurent Location"
+                android:cursorVisible="false"
+                android:padding="15dp"
+                android:background="@drawable/curve_button_white"
+                android:inputType="textPostalAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="30dp"
+            android:background="#D3D3D3"/>
+
+        <LinearLayout
+            android:id="@+id/add_restaurent_phone_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:id="@+id/add_restaurent_phone_text"
+                android:text="Add Restaurent Phone"
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:layout_margin="10dp"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/add_restaurent_phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:hint="Enter Phone..."
+                android:cursorVisible="false"
+                android:padding="15dp"
+                android:background="@drawable/curve_button_white"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="30dp"
+            android:background="#D3D3D3"/>
+
+        <LinearLayout
+            android:id="@+id/add_restaurent_email_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/add_restaurent_email_text"
+                android:text="Add Restaurent Email"
+                android:layout_width="0dp"
+                android:layout_weight="0.88"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:layout_margin="10dp"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/add_restaurent_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:hint="Enter Email..."
+                android:cursorVisible="false"
+                android:padding="15dp"
+                android:background="@drawable/curve_button_white"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="30dp"
+            android:background="#D3D3D3"/>
+
+        <Button
+            android:id="@+id/add_restaurent_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/curve_button_white"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

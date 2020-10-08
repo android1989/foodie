@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8B3D"
+    tools:context=".OrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/order_details_heading"
+        android:text="Confirm Order"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/order_item_image"
+        android:src="@drawable/item_avatar3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/order_details_heading"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/order_item_name"
+        android:text="Item Name"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/order_item_image"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/order_item_price"
+        android:text="Price"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/order_item_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp" />
+
+        <LinearLayout
+            android:id="@+id/address_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_item_price"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+    <EditText
+        android:id="@+id/order_address"
+        android:layout_width="0dp"
+        android:layout_weight="0.85"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve_button_white"
+        android:hint="Enter Delievery Address"
+        android:padding="10dp"
+        android:inputType="textPostalAddress"
+        android:maxLines="5"
+        android:singleLine="false"
+        android:layout_marginLeft="30dp"/>
+
+            <ImageView
+                android:id="@+id/order_location"
+                android:src="@drawable/gps_icon"
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/refral_code"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/address_linear"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve_button_white"
+            android:hint="Enter Referral code (Optional)"
+            android:padding="10dp"
+            android:inputType="textPostalAddress"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/place_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refral_code"
+        android:background="@drawable/curve_button_white"
+        android:text="Pay Now"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#ff0000"
+        android:layout_margin="30dp"/>
+
+    </RelativeLayout>
+</ScrollView>

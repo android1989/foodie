@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="insideInset"
+    tools:context=".RestaurentsActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:clickable="true"
+            android:onClick="goBack">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow1"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text="Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Restaurent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurent Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/Restaurent_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurent Address"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_likes"
+                android:layout_marginTop="3dp"/>
+        <TextView
+            android:id="@+id/Restaurent_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="190"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+        <RatingBar
+            android:id="@+id/restaurent_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+            <TextView
+                android:text="("
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/restaurent_reviews"
+                android:text="234"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"/>
+
+            <TextView
+                android:text="reviews"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:text=")"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+            <Spinner
+                android:id="@+id/restaurent_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/status"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/fav_button"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_favorite"
+                android:clickable="true"
+                android:background="#ffffff"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/location_button"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="24dp"
+                android:src="@drawable/location_icon"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/curve_button_white"
+                />
+            <ImageView
+                android:id="@+id/rating_button"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="24dp"
+                android:src="@drawable/star_icon"
+                android:background="#ffffff"
+                android:layout_gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/restaurent_contact"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Contact"
+                android:textSize="15sp"
+                android:background="@drawable/curve_button_red"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#D3D3D3"/>
+
+        <TextView
+            android:text="FEATURED ITEMS(Click on Image to Order)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/restaurent_items_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+            </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#D3D3D3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+        <TextView
+            android:text="Reviews"
+            android:layout_width="0dp"
+            android:layout_weight="0.70"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/reviews_add_review_btn"
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_height="wrap_content"
+                android:text="Add review"
+                android:textAllCaps="false"
+                android:background="@drawable/curve_button_red"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/restaurent_reviews_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</ScrollView>
